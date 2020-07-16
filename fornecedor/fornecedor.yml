@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    password: root
+    username: root
+    url: jdbc://
+  jpa:
+    hibernate:
+      ddl-auto:update
