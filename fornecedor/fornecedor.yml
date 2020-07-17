@@ -2,7 +2,10 @@ spring:
   datasource:
     password: aminadabe
     username: root
-    url: 'jdbc:mysql://localhost:3306/fornecedor'
+    url: 'jdbc:mysql://localhost:3306/fornecedor?useTimezone=true&serverTimezone=UTC'
   jpa:
     hibernate:
       ddl-auto: update
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.H2Dialect
